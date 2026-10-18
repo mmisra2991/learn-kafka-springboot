@@ -29,6 +29,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="code" target="25" />
+      <module name="core" target="25" />
       <module name="core.main" target="25" />
       <module name="core.test" target="25" />
     </bytecodeTargetLevel>
