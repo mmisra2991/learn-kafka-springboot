@@ -15,28 +15,29 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.46/a5cfe99fdf320e84955ef653f2ce1bf789d11385/lombok-1.18.46.jar" />
         </processorPath>
-        <module name="core.main" />
-        <module name="core.test" />
       </profile>
       <profile name="Annotation profile for core-events-lib" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
         </processorPath>
         <module name="core-events-lib" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="code" target="25" />
+      <module name="core.main" target="25" />
+      <module name="core.test" target="25" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="EmailnotificationMs" options="-parameters" />
       <module name="core" options="-parameters" />
-      <module name="core-events-lib" options="-parameters" />
+      <module name="core-events-lib" options="" />
       <module name="core.main" options="-parameters" />
       <module name="core.test" options="-parameters" />
       <module name="kafkademo" options="-parameters" />
